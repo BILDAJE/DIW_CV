@@ -12,32 +12,32 @@
 
     <!-- Cabecera principal -->
     <header>
-  <h1>Altair</h1>
+        <h1>Altair</h1>
 
-   <p>
-    <img src="img/foto-perfil.jpg" alt="Fotografía de Ildefonso" width="45">
-  </p>
+        <p>
+            <img src="img/foto-perfil.jpg" alt="Fotografía de Ildefonso" width="45">
+        </p>
 
- <nav aria-label="Menú principal">
- <ul>
- <li><a href="index.html">Volver a Inicio</a></li>
- </ul>
- </nav>
- </header>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Volver a Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
 
- <main>
+    <main>
 
-<!-- Título de la página -->
- <section>
- <h1>Currículum Vitae</h1>
- <p>Consulta y actualiza tu currículum vitae.</p>
- </section>
+        <!-- Título de la página -->
+        <section>
+            <h1>Currículum Vitae</h1>
+            <p>Consulta y actualiza tu currículum vitae.</p>
+        </section>
 
-<!-- Datos personales -->
-<section>
+        <!-- Datos personales -->
+        <section>
             <h2>Datos personales</h2>
 
-            <button type="button">Editar datos</button>
+            <button type="button" data-action="edit-personal">Editar datos</button>
 
             <figure>
                 <img src="img/foto-perfil.jpg"
@@ -80,7 +80,7 @@
         <section>
             <h2>Formación académica</h2>
 
-            <button type="button">Añadir formación</button>
+            <button type="button" data-action="add">Añadir formación</button>
 
             <table>
                 <thead>
@@ -92,29 +92,7 @@
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
-
                 <tbody>
-                    <tr>
-                        <td>Desarrollo de Aplicaciones Web (DAW)</td>
-                        <td>Altair Centro Educativo</td>
-                        <td>2025</td>
-                        <td>2026</td>
-                        <td>
-                            <button type="button">Editar</button>
-                            <button type="button">Eliminar</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Técnico en Sistemas Microinformáticos y Redes</td>
-                        <td>IES San Pablo</td>
-                        <td>2021</td>
-                        <td>2023</td>
-                        <td>
-                            <button type="button">Editar</button>
-                            <button type="button">Eliminar</button>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </section>
@@ -123,76 +101,37 @@
         <section>
             <h2>Conocimientos y capacidades</h2>
 
-            <!-- Tabla de distribución de tres columnas.
-                 Se utiliza únicamente para mantener la distribución visual
-                 solicitada mientras trabajamos sin CSS. -->
             <table role="presentation">
                 <tbody>
                     <tr>
 
- <!-- Tecnologías -->
-<td>
-<section>
-<h2>Tecnologías</h2>
-<button type="button">Añadir tecnología</button>
+                        <!-- Tecnologías -->
+                        <td>
+                            <section>
+                                <h2>Tecnologías</h2>
 
-<table>
-<thead>
-<tr>
-<th scope="col">Tecnología</th>
-<th scope="col">Nivel</th>
-<th scope="col">Acciones</th>
-</tr>
-</thead>
-<tbody>
-                                        <tr>
-                                            <td>Java</td>
-                                            <td>Avanzado</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
+                                <button type="button" data-action="add">Añadir tecnología</button>
 
+                                <table>
+                                    <thead>
                                         <tr>
-                                            <td>Desarrollo web (HTML, CSS, JavaScript)</td>
-                                            <td>Avanzado</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
+                                            <th scope="col">Tecnología</th>
+                                            <th scope="col">Nivel</th>
+                                            <th scope="col">Acciones</th>
                                         </tr>
-
-                                        <tr>
-                                            <td>Bases de datos (MySQL, PostgreSQL)</td>
-                                            <td>Intermedio</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Entornos de desarrollo (Eclipse, Visual Studio Code)</td>
-                                            <td>Avanzado</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
+                                    </thead>
+                                    <tbody>
                                     </tbody>
                                 </table>
                             </section>
-
                         </td>
 
                         <!-- Habilidades -->
                         <td>
-
                             <section>
                                 <h2>Habilidades</h2>
 
-                                <button type="button">Añadir habilidad</button>
+                                <button type="button" data-action="add">Añadir habilidad</button>
 
                                 <table>
                                     <thead>
@@ -201,84 +140,18 @@
                                             <th scope="col">Acciones</th>
                                         </tr>
                                     </thead>
-
                                     <tbody>
-                                        <tr>
-                                            <td>Trabajo en Equipo</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Trabajo bajo presión</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Responsabilidad</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Versatilidad</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Empatía</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Resolución de problemas</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Capacidad de aprender</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Proactividad y Eficiencia</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </section>
-
                         </td>
 
                         <!-- Idiomas -->
                         <td>
-
                             <section>
                                 <h2>Idiomas</h2>
 
-                                <button type="button">Añadir idioma</button>
+                                <button type="button" data-action="add">Añadir idioma</button>
 
                                 <table>
                                     <thead>
@@ -287,32 +160,22 @@
                                             <th scope="col">Acciones</th>
                                         </tr>
                                     </thead>
-
                                     <tbody>
-                                        <tr>
-                                            <td>Español</td>
-                                            <td>
-                                                <button type="button">Editar</button>
-                                                <button type="button">Eliminar</button>
-                                            </td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </section>
-
                         </td>
 
                     </tr>
                 </tbody>
             </table>
-
         </section>
 
         <!-- Experiencia laboral -->
         <section>
             <h2>Experiencia laboral</h2>
 
-            <button type="button">Añadir experiencia</button>
+            <button type="button" data-action="add">Añadir experiencia</button>
 
             <table>
                 <thead>
@@ -324,35 +187,7 @@
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
-
                 <tbody>
-                    <tr>
-                        <td>Grupo Informática Sur – Técnico de soporte informático</td>
-                        <td>
-                            Instalación y mantenimiento de equipos, soporte a usuarios
-                            y gestión de incidencias.
-                        </td>
-                        <td>2022</td>
-                        <td>2024</td>
-                        <td>
-                            <button type="button">Editar</button>
-                            <button type="button">Eliminar</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Distribuciones Sevilla – Auxiliar administrativo</td>
-                        <td>
-                            Gestión de documentación, atención telefónica y apoyo
-                            en tareas administrativas.
-                        </td>
-                        <td>2020</td>
-                        <td>2021</td>
-                        <td>
-                            <button type="button">Editar</button>
-                            <button type="button">Eliminar</button>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </section>
@@ -361,7 +196,7 @@
         <section>
             <h2>Otros datos</h2>
 
-            <button type="button">Añadir dato</button>
+            <button type="button" data-action="add">Añadir dato</button>
 
             <table>
                 <thead>
@@ -371,33 +206,15 @@
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
-
                 <tbody>
-                    <tr>
-                        <td>Carnet de conducir B</td>
-                        <td></td>
-                        <td>
-                            <button type="button">Editar</button>
-                            <button type="button">Eliminar</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Disponibilidad para prácticas</td>
-                        <td></td>
-                        <td>
-                            <button type="button">Editar</button>
-                            <button type="button">Eliminar</button>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- Acciones finales -->
         <section>
-            <button type="button">Cancelar</button>
-            <button type="button">Descargar CV (PDF)</button>
+            <button type="button" data-action="cancel">Cancelar</button>
+            <button type="button" data-action="print">Descargar CV (PDF)</button>
         </section>
 
     </main>
@@ -406,6 +223,9 @@
     <footer>
         <p>Altair - Área del alumno</p>
     </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="js/curriculum.js"></script>
 
 </body>
 </html>
